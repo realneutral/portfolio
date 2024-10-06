@@ -1338,17 +1338,25 @@ footer a {
     }
 
     .home-container .home-img img {
-        width: 50%;
-        transform: translate(70px, -230px);
+        display: none;
     }
 
     .home .home-container .info {
         font-size: 0.8rem;
     }
 
-    .media-icons {
-        margin-bottom: 50px;
-    }
+    .media-icons li {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row;
+      }
+      
+      .media-icons > * {
+        display: block; 
+        margin: 0;
+      }
+    
 
     .get-in-touch .contact-card {
         display: grid;
